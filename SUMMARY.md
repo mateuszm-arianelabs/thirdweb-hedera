@@ -1,0 +1,5 @@
+This application was initially developed based on the example provided in the official Thirdweb documentation, available at https://portal.thirdweb.com/react/v5/getting-started. The documentation also links to two example repositories tailored for Vite and Next.js environments.
+
+The Thirdweb documentation is comprehensive and well-structured, allowing developers to implement key functionalities directly from the platform without the need to consult external sources. However, when integrating with the Hedera network, one limitation was identified: the Hedera Testnet configuration is not predefined in the SDK. This requires developers to manually define the network parameters, similar to the approach used in the viem library. Additionally, there is currently no available configuration for the Hedera Mainnet.
+
+In conclusion, the integration of Thirdweb was successful. Core features such as transaction signing, account abstraction-based authentication, and wallet interaction were implemented without significant issues.
