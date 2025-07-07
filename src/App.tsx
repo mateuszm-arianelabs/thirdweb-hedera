@@ -1,6 +1,6 @@
 import { ConnectButton, useSendTransaction } from "thirdweb/react";
 import thirdwebIcon from "./thirdweb.svg";
-import { client } from "./client";
+import { accountAbstraction, client } from "./client";
 import { getContract, prepareContractCall } from "thirdweb";
 import { hederaTestnet } from "./hedera-testnet";
 import { useState } from "react";
@@ -38,12 +38,9 @@ export function App() {
 				<div className="flex justify-center mb-20 gap-4">
 					<ConnectButton
 						client={client}
-						appMetadata={{
-							name: "Example app",
-							url: "https://example.com",
-						}}
+						accountAbstraction={accountAbstraction}
 					/>
-					<button disabled={isLoading} className="bg-zinc-700 py-1 px-4 rounded hover:bg-zinc-600 transition-all disabled:opacity-20 disabled:cursor-progress" onClick={onClick}>Send Transaction</button>
+					<button disabled={isLoading} className="bg-zinc-700 py-1 px-4 rounded hover:bg-zinc-600 transition-all disabled:opacity-20 disabled:cursor-progress" onClick={onClick}>Send Sponsored Transaction</button>
 				</div>
 
 				{txHash && <p>TxHash: {txHash}</p>}
