@@ -6,6 +6,11 @@ This minimalist app allows users to log in using various methods, including Goog
 The repository includes simple smart contracts located in the /contracts folder, deployed specifically for signing transactions.
 A brief summary of the implementation process can be found in the SUMMARY.md file.
 
+
+For testing purposes on testnet, no funding is required on the Thirdweb side.
+However, when using the mainnet, you must select an appropriate plan via thirdweb.com/team.
+To do this, go to your project dashboard and navigate to Account Abstraction from the left-hand panel.
+
 ## Run Locally
 Required:
 - Node 20+ (Tested on 20.19.1)
